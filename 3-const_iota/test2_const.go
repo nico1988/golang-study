@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+type ByteSize float64
+
 //const 来定义枚举类型
 const (
 	//可以在const() 添加一个关键字 iota， 每行的iota都会累加1, 第一行的iota的默认值是0
@@ -17,6 +19,18 @@ const (
 
 	g, h = iota * 2, iota *3  // iota = 3, g = iota * 2, h = iota * 3, g = 6, h = 9 
 	i, k					   // iota = 4, i = iota * 2, k = iota * 3 , i = 8, k = 12
+)
+
+const (
+	_ = iota
+	KB ByteSize = 1 << (10 * iota) // 1 << (10 * 0) = 1
+	MB
+	GB
+	TB
+	PB
+	EB
+	ZB
+	YB
 )
 
 func main() {
@@ -40,5 +54,14 @@ func main() {
 
 	// iota 只能够配合const() 一起使用， iota只有在const进行累加效果。
 	//var a int = iota 
+
+	fmt.Printf("KB = %f\n", KB)
+	fmt.Printf("MB = %f\n", MB)
+	fmt.Printf("GB = %f\n", GB)
+	fmt.Printf("TB = %f\n", TB)
+	fmt.Printf("PB = %f\n", PB)
+	fmt.Printf("EB = %f\n", EB)
+	fmt.Printf("ZB = %f\n", ZB)
+	fmt.Printf("YB = %f\n", YB)
 
 }
