@@ -69,4 +69,11 @@ func main() {
 		jj bool = true
 	)
 	fmt.Println("vv = ", vv, ", jj = ", jj)
+
+	var (
+		a1 int = 100
+		b1 int = 200
+		c1 int = 300
+	)
+	fmt.Println("a1 = ", a1, ", b1 = ", b1, ", c1 = ", c1)
 }
