@@ -21,6 +21,8 @@ const (
 	i, k					   // iota = 4, i = iota * 2, k = iota * 3 , i = 8, k = 12
 )
 
+// iota only can be used in const() block
+// iota is a pre-declared identifier, which is used to represent the current value of the iota constant in the const block.
 const (
 	_ = iota
 	KB ByteSize = 1 << (10 * iota) // 1 << (10 * 0) = 1
