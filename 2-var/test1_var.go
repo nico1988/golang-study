@@ -22,7 +22,7 @@ func main() {
 	fmt.Println("a = ", a)
 	fmt.Printf("type of a = %T\n", a)
 
-	//方法二：声明一个变量，初始化一个值
+	//方法二：声明一个变量，初始化一个值 
 	var b int = 100
 	fmt.Println("b = ", b)
 	fmt.Printf("type of b = %T\n", b)
