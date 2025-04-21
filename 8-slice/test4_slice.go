@@ -17,7 +17,7 @@ func main() {
 
 	fmt.Printf("len = %d, cap = %d, slice = %v\n", len(numbers), cap(numbers), numbers)
 
-	//向一个容量cap已经满的slice 追加元素，
+	//向一个容量cap已经满的slice 追加元素， 会重新开辟一个新的空间，新的cap是在原来的cap的基础上新增 cap 
 	numbers = append(numbers, 3)
 
 	fmt.Printf("len = %d, cap = %d, slice = %v\n", len(numbers), cap(numbers), numbers)
