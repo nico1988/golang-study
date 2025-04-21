@@ -32,6 +32,9 @@ func main() {
 	cityMap["USA"] = "DC"
 	ChangeValue(cityMap)
 
+	cityMap["China"] = "Shanghai"
+	cityMap["Australia"] = "Sydney"
+
 	fmt.Println("-------")
 
 	//遍历
