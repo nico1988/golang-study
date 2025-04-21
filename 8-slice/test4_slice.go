@@ -25,6 +25,8 @@ func main() {
 	fmt.Println("-=-------")
 	var numbers2 = make([]int, 3)
 	fmt.Printf("len = %d, cap = %d, slice = %v\n", len(numbers2), cap(numbers2), numbers2)
+
+	// 向numbers2切片追加一个元素1, numbers2 len = 4， [0,0,0,1], cap = 3
 	numbers2 = append(numbers2, 1)
 	fmt.Printf("len = %d, cap = %d, slice = %v\n", len(numbers2), cap(numbers2), numbers2)
 }
