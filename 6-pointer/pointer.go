@@ -41,4 +41,9 @@ func main() {
 
 	fmt.Println(&p)
 	fmt.Println(pp)
+
+	var cc = 100
+	var p1 *int = &cc
+	fmt.Println(*p1) //100
+	fmt.Println(&p1) //20
 }
