@@ -18,6 +18,20 @@ func myFunc(arg interface{}) {
 
 		fmt.Printf("value type is %T\n", value)
 	}
+
+
+	switch arg.(type) {
+	case int:
+		fmt.Println("arg is int type")
+	case string:
+		fmt.Println("arg is string type")
+	case float64:
+		fmt.Println("arg is float64 type")
+	case Book:
+		fmt.Println("arg is Book type")
+	default:
+		fmt.Println("arg is unknown type")
+	}
 }
 
 type Book struct {
