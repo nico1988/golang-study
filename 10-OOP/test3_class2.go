@@ -33,6 +33,10 @@ func (this *SuperMan) Fly() {
 	fmt.Println("SuperMan.Fly()...")
 }
 
+func (this *SuperMan) Look() {
+	fmt.Println("SuperMan.Look()...")
+}
+
 func (this *SuperMan) Print() {
 	fmt.Println("name = ", this.name)
 	fmt.Println("sex = ", this.sex)
@@ -55,6 +59,7 @@ func main() {
 	s.Walk() //父类的方法
 	s.Eat()  //子类的方法
 	s.Fly()  //子类的方法
+	s.Look() //子类的方法
 
 	s.Print()
 }
